@@ -44,7 +44,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
   // when guess is wrong
   else if (guess !== number) {
-    if (score > 0) {
+    if (score > 1) {
       displayMessage(guess > number ? '📈 Too High' : '📉 Too Low');
       --score;
       document.querySelector('.score').textContent = score;
